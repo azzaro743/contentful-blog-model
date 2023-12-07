@@ -1,1 +1,3 @@
 # contentful-blog-model
+
+TODO
