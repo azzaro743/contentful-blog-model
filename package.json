@@ -7,11 +7,13 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "eslint \"**/*.js\""
+    "lint": "eslint \"**/*.js\"",
+    "model-import": "source .env && contentful space migration src/blog-model.js --environment-id $ENVIRONMENT_ID --space-id $SPACE_ID --yes"
   },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.1.0"
   }
 }
